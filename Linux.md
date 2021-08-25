@@ -46,3 +46,5 @@
         不同的用户登陆系统之后，创建文件或者目录，所赋予的权限值并不一样，这就与umask有关
 
 * `file`命令，与`ll`命令相比较，`file`命令可以直接告诉我们文件的具体类型。
+
+![](https://github.com/WalkingNL/Pics/blob/master/file%20cmd.jpg)
