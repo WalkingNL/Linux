@@ -72,3 +72,43 @@
 * 例2:
 
         [+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)
+ 
+### Shell
+
+* `type`命令，判断一个命令是不是内建命令
+
+        type cd
+
+* `.`命令，内建命令，当使用`./可执行命令`因为无权限，被系统拒绝执行的时候，使用`. ./可执行命令`便可实现
+
+* `declare`与`typeset`命令，两个命令的作用完全相同，都是用来声明变量的。
+
+        declare -F:
+        declare -f:
+
+* `break` 与 `continue`
+
+        break 与 break 2
+        continue 与 continue 2
+        
+        
+* `eval`命令
+
+1. 将字符命令解析成命令执行
+
+        cmd="ls -l /ect/passwd"
+        eval $cmd
+        
+2. 根据某个变量确定实际的变量名
+
+        name1=john
+        name2=wang
+        num=1
+        eval echo "$"name$num
+
+3. 将某个变量的值当作另一个变量名并给其赋值
+
+        name1=john
+        name2=wang
+        eval $name1="$name2"
+
