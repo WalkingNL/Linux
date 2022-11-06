@@ -1,3 +1,12 @@
+# LINUX
+
+## SYSTEM
+
+```mermaid
+flowchart TB
+```
+
+
 #### Basic commands
 
 * mkdir -p [file]
